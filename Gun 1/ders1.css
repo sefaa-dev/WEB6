@@ -1,0 +1,63 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #082e35;
+    border: 2px solid red;
+    border-radius: 25px 0 25px 0;
+    padding: 25px;
+    transition: all .4s;
+}
+
+p:hover {
+    border-radius: 0;
+    border-radius: 0 25px 0 25px;
+    box-shadow: 5px 3px;
+    border-color: black;
+    transform: scale(1.1);
+}
+
+.ozel {
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.indirim {
+    text-decoration: underline;
+}
+
+.ozel .indirim {
+    color: red;
+}
+
+body>ol>li:nth-child(4)>ol>li:nth-child(1) {
+    color: chartreuse;
+}
+
+#img-avatar {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 3px;
+}
+
+li:nth-child(odd) {
+    background-color: gray;
+}
+
+li:nth-child(even) {
+    background-color: gainsboro;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(173, 178, 182);
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(222, 222, 223);
+}
+
+tbody>tr:nth-child(1) {
+    background-color: transparent;
+}
