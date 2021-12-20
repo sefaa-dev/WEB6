@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fonksiyonlar</title>
 </head>
-<body>
-
-    <script src = "index.js"></script>
-    
+<body onload="renklendir()">
+    <input type="text" placeholder="Sayı 1" id="txt-sayi1"><br>
+    <input type="text" placeholder="Sayi 2" id="txt-sayi2"><br>
+    <input type="button" value="Hesapla" onclick="topla()">
+    <label id="lbl-sonuc">Sonuç: </label><br>
+    <input type="range" min="0" max="255" value="125" 
+    onmousemove='document.getElementById("lbl-range").innerHTML = this.value'>
+    <label id="lbl-range"></label>
+    <hr>
+    <input type="range" min="0" max="255" value="125" id="rng-red" onmousemove="renklendir()"><br>
+    <input type="range" min="0" max="255" value="125" id="rng-yellow" onmousemove="renklendir()"><br>
+    <input type="range" min="0" max="255" value="125" id="rng-blue" onmousemove="renklendir()"><br>
+    <div id="dv-kutu" class="kutu"></div>
+    <script src="index.js"></script>
+    <style>
+        .kutu{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
 </body>
 </html>
